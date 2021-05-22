@@ -2,11 +2,21 @@
 <Patch>
 	<Operation Class="PatchOperationConditional">
 	<xpath>*/ThingDef[defName="AA_Mime"]</xpath>
-		<match Class="PatchOperationReplace">
-		<xpath>*/PawnKindDef[defName="AA_Mime"]/lifeStages/li/bodyGraphicData/texPath</xpath>
-			<value>
-				<texPath>Things/Pawn/Animal/AA_Patch_SusMime/AA_Patch_SusMime</texPath>
-			</value>
+		<match Class="PatchOperationSequence">
+		<operations>
+			<li Class="PatchOperationReplace">
+			<xpath>*/PawnKindDef[defName="AA_Mime"]/lifeStages/li/bodyGraphicData/texPath</xpath>
+				<value>
+					<texPath>Things/Pawn/Animal/AA_Patch_SusMime/AA_Patch_SusMime</texPath>
+				</value>
+			</li>
+			<li Class="PatchOperationReplace">
+			<xpath>*/HediffDef[defName="AA_MimeHediff"]/description</xpath>
+				<value>
+					<description>This colonist is acting real sussy...</description>
+				</value>
+			</li>
+		</operations>
 		</match>
 	</Operation>
 </Patch>
