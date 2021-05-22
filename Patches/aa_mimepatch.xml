@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Patch>
+	<Operation Class="PatchOperationConditional">
+	<xpath>*/ThingDef[defName="AA_Mime"]</xpath>
+		<match Class="PatchOperationReplace">
+		<xpath>*/PawnKindDef[defName="AA_Mime"]/lifeStages/li/bodyGraphicData/texPath</xpath>
+			<value>
+				<texPath>Things/Pawn/Animal/AA_Patch_SusMime/AA_Patch_SusMime</texPath>
+			</value>
+		</match>
+	</Operation>
+</Patch>

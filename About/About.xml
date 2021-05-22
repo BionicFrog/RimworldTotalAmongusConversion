@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ModMetaData>
+	<packageId>brat.amongusoverhaul</packageId>
+	<name>amongusoverhaul</name>
+	<author>Brat</author>
+	<supportedVersions>
+		<li>1.2</li>
+	</supportedVersions>
+	<description>total among us overhaul for rimworld
+current features:
+Alpha Animals Mime Retexture
+Bullet Retexture
+</description>
+</ModMetaData>
